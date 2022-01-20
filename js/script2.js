@@ -41,6 +41,7 @@ const teams=[
 ]
 let team='';
 let obj=0;
+let elements=[]
 for(let i=0; i<teams.length; i++){
     team=teams[i];
     teams[i].puntiFatti=getRandomNumber(1,20);
@@ -48,6 +49,9 @@ for(let i=0; i<teams.length; i++){
     
     obj=i
     console.log(teams)
-    const {puntiFatti, falliSubiti}=teams[obj]
-    console.log(puntiFatti, falliSubiti)
+    const {nome, falliSubiti}=teams[obj]
+    //console.log(puntiFatti, falliSubiti)
+    elements.push(nome, falliSubiti);
+
 }
+console.log(elements)
