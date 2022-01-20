@@ -37,7 +37,19 @@ const bikes=[
 
 //ciclare sulle bici
 
+let min=0;
+const result=[];
+for(let i =0; i<bikes.length; i++){
+    const {peso}=bikes[i];
 
+    result.push(peso)
+    
+    
+}
+//trovare peso minore
+
+min=Math.min(...result)
+console.log(min) 
 
 
 
