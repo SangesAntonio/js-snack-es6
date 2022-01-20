@@ -3,14 +3,7 @@ console.log('js ok')
 Creare un array di oggetti:
 Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 Stampare in console la bici con peso minore utilizzando destructuring e template literal
-Snack2
-Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
-Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
-Generare numeri random al posto degli 0 nelle proprietà:
-Punti fatti e falli subiti.
-Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-BONUS
-Stampare in pagina oltre che in console!*/
+*/
 
 //? Snack numero 1
 
@@ -36,20 +29,22 @@ const bikes=[
 ]
 
 //ciclare sulle bici
-
+let bike={};
 let min=0;
 const result=[];
 for(let i =0; i<bikes.length; i++){
+    bike=bikes[i];
     const {peso}=bikes[i];
 
-    result.push(peso)
-    
-    
+    if(peso < bikes[min].peso){
+        min=i;
+    }
 }
 //trovare peso minore
 
-min=Math.min(...result)
-console.log(min) 
+console.log(bikes[min].peso,bikes[min].modello) 
+
+
 
 
 
