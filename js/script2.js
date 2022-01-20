@@ -39,4 +39,15 @@ const teams=[
         falliSubiti:0,
     },
 ]
-
+let team='';
+let obj=0;
+for(let i=0; i<teams.length; i++){
+    team=teams[i];
+    teams[i].puntiFatti=getRandomNumber(1,20);
+    teams[i].falliSubiti=getRandomNumber(1,10);
+    
+    obj=i
+    console.log(teams)
+    const {puntiFatti, falliSubiti}=teams[obj]
+    console.log(puntiFatti, falliSubiti)
+}

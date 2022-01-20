@@ -36,11 +36,12 @@ for(let i =0; i<bikes.length; i++){
     bike=bikes[i];
     const {peso}=bikes[i];
 
+    //trovare peso minore
     if(peso < bikes[min].peso){
         min=i;
     }
+    console.log(bikes[min].peso)
 }
-//trovare peso minore
 
 console.log(bikes[min].peso,bikes[min].modello) 
 
