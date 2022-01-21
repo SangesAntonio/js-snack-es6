@@ -7,4 +7,19 @@ Usiamo i nuovi metodi degli array visti oggi in classe.
 console.log('js ok');
 
 //!funzione
-const 
+const getElements =(array, min, max)=>{
+    const newArray=array.filter((item)=>{
+        if(item > min && item < max){
+            return true;
+        }
+        return false;
+    })
+    return newArray
+}
+//array
+
+const oggetti = ['anguria', 'pinguino', 'umbria','lecce', 'fotocamera', 'albero', 'cubo'];
+
+newArray = getElements(oggetti,2,6);
+
+console.log(newArray);
