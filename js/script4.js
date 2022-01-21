@@ -9,27 +9,27 @@ ES.: (marco de iulio  => Marco De Iulio)*/
 
 const students =[
     {
-        id: '00276',
+        id: '76',
         nome: 'rosa',
         totaleVoti: '80'
     },
     {
-        id: '00156',
+        id: '56',
         nome: 'akira',
         totaleVoti: '65'
     },
     {
-        id: '00856',
+        id: '156',
         nome: 'mario',
         totaleVoti: '92'
     },
     {
-        id: '00365',
+        id: '165',
         nome: 'raffaella',
         totaleVoti: '45'
     },
     {
-        id: '00745',
+        id: '121',
         nome: 'renato',
         totaleVoti: '58'
     },
@@ -43,5 +43,18 @@ console.log(upperletter);
 
 //creo nuovo array con metodo filter per gli studenti con voti sopra il 70
 const over70 = students.filter((studente)=>{
-    
+    if(studente.totaleVoti > 70){
+        return true;
+    }
+    return false;
 })
+console.log(over70);
+
+//creo nuovo array con studenti sopra i 70 e id sopra 120
+const idOver120 = over70.filter((studente)=>{
+    if(studente.id > 120){
+        return true
+    }
+    return false;
+})
+console.log(idOver120);
