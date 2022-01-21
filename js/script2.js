@@ -51,7 +51,7 @@ for(let i=0; i<teams.length; i++){
     console.log(teams)
     const {nome, falliSubiti}=teams[obj]
     //console.log(puntiFatti, falliSubiti)
-    elements.push(nome, falliSubiti);
+    elements.push({nome, falliSubiti});
 
 }
 console.log(elements)
