@@ -8,18 +8,22 @@ console.log('js ok');
 
 //!funzione
 const getElements =(array, min, max)=>{
-    const newArray=array.filter((item)=>{
-        if(item > min && item < max){
+    const newArray=array.filter((item,i)=>{
+        if(i >= min && i <= max){
             return true;
         }
         return false;
-    })
-    return newArray
+    });
+    return newArray;
 }
-//array
 
+
+//array
 const oggetti = ['anguria', 'pinguino', 'umbria','lecce', 'fotocamera', 'albero', 'cubo'];
+
+//? ESECUZIONE
 
 newArray = getElements(oggetti,2,6);
 
 console.log(newArray);
+

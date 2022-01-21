@@ -37,7 +37,7 @@ const students =[
 
 //creo lista dei nomi con iniziale in maiuscolo
 const upperletter=students.map((studente)=> {
-    return studente.nome.charAt(0).toUpperCase() + studente.nome.substr(1)
+    return studente.nome.charAt(0).toUpperCase() + studente.nome.substring(1).toLowerCase();
 });
 console.log(upperletter);
 
